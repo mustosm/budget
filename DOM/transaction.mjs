@@ -1,5 +1,6 @@
 // transaction.js
 import mongoose from 'mongoose';
+
 const TransactionSchema = new mongoose.Schema({  
   transactionId: String,
   amount: {

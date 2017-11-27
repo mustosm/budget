@@ -17,6 +17,7 @@
     "babel-preset-es2015": "^6.24.1",
     "hapi": "^16.6.2",
     "knex": "^0.14.0",
-    "mongoose": "^4.13.2"
+    "mongoose": "^4.13.2",
+    "node-uuid": "^1.4.8"
   }
 }

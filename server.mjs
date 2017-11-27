@@ -7,19 +7,15 @@ server.connection({
     port: 8080
 });
 
-server.initialize()
-
-
-server.start(err => {
+server.start(err => {   
     routes.forEach((route) => {
         console.log(`attaching ${route.path} - ${route.method}`);
         server.route(route);
     });
-    
     if (err) {
         // Fancy error handling here
         console.error('Error was handled!');
         console.error(err);
-    }
+    };
     console.log(`Server started at ${server.info.uri}`);
 });
